@@ -123,6 +123,7 @@
 
 .card-project-description {
     font-size: 0.8rem;
+    margin-bottom: 2rem;
 }
 
 .card-project-link {
@@ -144,4 +145,20 @@
     .card-project-stack {
         font-size: 0.8rem;
     }
+}
+
+
+.blog-heading {
+    font-size: 3rem;
+}
+
+.blog-paragraph {
+    font-size: 1.2rem;
+    margin-top: 4rem;
+}
+
+.link-buttons {
+    display: flex;
+    justify-content: end;
+    gap: 1.5rem;
 }
