@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+
+#root {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    /* text-align: center; */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  section > h2 {
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  section > div {
+    /* display: flex; */
+    /* flex-wrap:wrap; */
+    /* gap: 2rem; */
+    /* width: 100%; */
+  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  
+  section > h2 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: rgb(105, 105, 105);
+    font-weight: 300;
+  }
+  
+  
+  @media (min-width: 930px) {
+    section > div {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name > h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.name > p {
+    margin-top: 0.625rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.links {
+    margin-top: 0.2rem;
+}
+
+.links > .icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.links i {
+    font-size: 1.5rem;
+}
+
+.resume {
+    margin-top: 0.625rem;
+    display: flex;
+    justify-content: end;
+}
+
+.card-container {
+    border: 2px solid #CE195A;
+    border-radius: 17px;
+    margin-bottom: 2rem;
+    padding: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-project-type-stack {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-project-type {
+    color: #690026;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    /* lowercase */
+    /* capitalize */
+}
+
+.card-project-stack {
+    font-size: 0.54rem;
+    display: flex;
+    justify-content: end;
+}
+
+.card-project-title {
+    font-size: 1.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.625rem;
+}
+
+.card-project-description {
+    font-size: 0.8rem;
+}
+
+.card-project-link {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    /* text-decoration: underline; */
+    display: flex;
+    justify-content: end;
+}
+
+.card-project-link > a {
+    border: 1px solid #CE195A;
+    color: #CE195A;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+@media (min-width: 600px) {
+    .card-project-stack {
+        font-size: 0.8rem;
+    }
+}
